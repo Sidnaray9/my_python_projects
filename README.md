@@ -17,19 +17,41 @@ Using descriptive statistics and visualisations, I analysed customer behaviour p
 ---
 
 ### 3. Feature Engineering
-I created several features to better represent customer behaviour:
+I engineered several behavioural and transaction-based features at the customer level. The complete list of created features includes:
 
-RFM (Recency, Frequency, Monetary) values
+* Recency
 
-Average Order Value
+* Frequency
 
-Customer Loyalty Duration
+* Monetary
 
-Returns Ratio
+* Average Order Value
 
-Total Purchase and Return Value
+* Average Purchase Interval
 
-Product Categories purchased and most common items
+* Returns Ratio
+
+* Total Return Value
+
+* Total Purchase Value
+
+* Monetary Returns Ratio
+
+* Product Purchased (unique product count)
+
+* Customer Loyalty Duration (in days)
+
+* Order Count
+
+* Number of Product Categories Purchased
+
+* Most Common Category
+
+* Purchased Top 10 StockCodes
+
+* Purchased Top 10 Descriptions
+
+These features were instrumental in shaping the clusters and training the prediction model. When training the Random Forest Classifier to predict cluster membership, the model's feature importance rankings highlighted many of these engineered features—particularly Recency, Total Purchase Value, Monetary, Average Order Value, and Product Purchased—as the most relevant predictors. This validation confirmed that the created features captured meaningful patterns in customer behaviour and were critical in segment differentiation.
 
 ---
 
