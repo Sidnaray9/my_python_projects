@@ -1,22 +1,22 @@
 # my_python_projects
 A repository for my independent python projects 
 
-# E - Commerce Customer Segmentation Project
+## E - Commerce Customer Segmentation Project
 
 E-commerce Customer Segmentation and Prediction – Project Summary
 In this project, I performed comprehensive customer segmentation and behaviour prediction based on an e-commerce dataset containing transactional records.
 
-## 1. Data Preparation & Cleaning
+### 1. Data Preparation & Cleaning
 I started by loading the data and exploring its structure. The data was segmented at two levels — customer (CustomerID) and transaction (InvoiceNo). I handled missing values, specifically addressing the 24.93% of entries with missing CustomerID. I analysed these separately, observing trends such as lower quantities and higher unit prices, suggesting they were special cases like online orders or returns.
 
 ---
 
-## 2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA)
 Using descriptive statistics and visualisations, I analysed customer behaviour patterns, purchasing frequency, unit prices, and returns. Special attention was given to patterns in InvoiceNo and StockCode for transactions without CustomerIDs.
 
 ---
 
-## 3. Feature Engineering
+### 3. Feature Engineering
 I created several features to better represent customer behaviour:
 
 RFM (Recency, Frequency, Monetary) values
@@ -33,7 +33,7 @@ Product Categories purchased and most common items
 
 ---
 
-## 4. Dimensionality Reduction
+### 4. Dimensionality Reduction
 To facilitate visualisation and clustering:
 
 I applied Principal Component Analysis (PCA) to reduce high-dimensional features into principal components while preserving variance.
@@ -42,7 +42,7 @@ I also used t-SNE (t-distributed Stochastic Neighbour Embedding) for non-linear 
 
 ---
 
-## 5. Customer Clustering
+### 5. Customer Clustering
 I experimented with multiple clustering algorithms:
 
 KMeans Clustering – Chosen as the final model for its interpretability and performance.
@@ -55,7 +55,7 @@ Cluster results were visualised using scatter plots (PCA and t-SNE transformed),
 
 ---
 
-## 6. Predictive Modelling
+### 6. Predictive Modelling
 I built classification models to predict the cluster labels:
 
 Random Forest Classifier – Delivered the highest accuracy and interpretability, with feature importance plots indicating which behaviours were most predictive.
@@ -66,7 +66,7 @@ Certainly! Here's the same report without any bold text formatting:
 
 ---
 
- ## 7. Interpreting Customer Segments from a Business Perspective
+### 7. Interpreting Customer Segments from a Business Perspective
 
 After applying clustering algorithms and visualising the results using PCA and t-SNE, I interpreted the clusters to uncover the distinct behavioural patterns of each segment. Each cluster represents a unique customer profile with different engagement levels, spending behaviours, and purchase frequencies.
 
@@ -80,7 +80,7 @@ This interpretation helped me align the segments with real-world business strate
 
 ---
 
- ## 8. Recommended Engagement Strategies for Each Customer Segment
+### 8. Recommended Engagement Strategies for Each Customer Segment
 
 To leverage the insights drawn from customer segmentation, I proposed targeted business strategies tailored to the specific needs and behaviour of each cluster.
 
@@ -124,7 +124,7 @@ This group includes moderate-value customers who need nudging to increase their 
 
 ---
 
- ## Strategic Recommendations Across Segments
+### Strategic Recommendations Across Segments
 
 - Segment-Specific Communication: I would develop distinct messaging strategies for each cluster using email, retargeting ads, and social media, aligned with their behaviour and value.
 
